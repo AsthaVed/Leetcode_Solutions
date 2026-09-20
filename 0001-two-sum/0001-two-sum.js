@@ -4,7 +4,7 @@
  * @return {number[]}
  */
  // nums = [1,2,3,4]
- // target = 5
+ // target = 5  //O(n)
  var twoSum = function(nums, target) {
     const map = {}
 
@@ -20,7 +20,7 @@
 }
 
 
- //it takes 33 ms
+ //it takes 33 ms O(n²)
 // var twoSum = function(nums, target) {
 //     let twoSum = 0;
 //     for(let i=0; i<nums.length-1; i++){
