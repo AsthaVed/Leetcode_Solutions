@@ -3,6 +3,7 @@
  * @param {number} target
  * @return {number[]}
  */
+  //O(n)
  var twoSum = function(nums, target) {
     const map = {}
 
