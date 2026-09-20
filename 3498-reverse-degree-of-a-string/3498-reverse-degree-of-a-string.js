@@ -13,11 +13,11 @@ var reverseDegree = function(s) {
 
 // var reverseDegree = function (s) {
 //     let reversedAlphabet = 'abcdefghijklmnopqrstuvwxyz'.split('').reverse()
-//     let result = 0
+//     let r = 0
 
 //     for (let i = 0; i < s.length; i++) {
-//         result += (reversedAlphabet.indexOf(s[i]) + 1) * (i + 1)
+//         r += (reversedAlphabet.indexOf(s[i]) + 1) * (i + 1)
 //     }
 
-//     return result
+//     return r
 // };
