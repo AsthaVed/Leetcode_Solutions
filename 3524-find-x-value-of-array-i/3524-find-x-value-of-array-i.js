@@ -7,28 +7,31 @@
 var resultArray = function(nums, k) {
       const result = new Array(k).fill(0);
 
-    // dp[r] = current position se end hone wale
-    // subarrays jinka product % k = r
-    let dp = new Array(k).fill(0);
+    let dp = new Map();
 
     for (const num of nums) {
-        const next = new Array(k).fill(0);
+        const remainder = num % k;
+        const next = new Map();
 
         // Single element subarray
-        const remainder = num % k;
-        next[remainder]++;
+        next.set(
+            remainder,
+            (next.get(remainder) || 0) + 1
+        );
 
-        // Previous subarrays ko current num ke saath extend karo
-        for (let r = 0; r < k; r++) {
-            if (dp[r] > 0) {
-                const newRemainder = (r * remainder) % k;
-                next[newRemainder] += dp[r];
-            }
+        // Previous subarrays ko current number ke saath extend karo
+        for (const [r, count] of dp) {
+            const newRemainder = (r * remainder) % k;
+
+            next.set(
+                newRemainder,
+                (next.get(newRemainder) || 0) + count
+            );
         }
 
-        // Current subarrays ke counts result mein add karo
-        for (let r = 0; r < k; r++) {
-            result[r] += next[r];
+        // Result mein current ending wale subarrays add karo
+        for (const [r, count] of next) {
+            result[r] += count;
         }
 
         dp = next;
