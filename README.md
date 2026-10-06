@@ -9,6 +9,7 @@
 | [1512-number-of-good-pairs](https://github.com/AsthaVed/Leetcode_Solutions/tree/master/1512-number-of-good-pairs) |
 | [2119-a-number-after-a-double-reversal](https://github.com/AsthaVed/Leetcode_Solutions/tree/master/2119-a-number-after-a-double-reversal) |
 | [2469-convert-the-temperature](https://github.com/AsthaVed/Leetcode_Solutions/tree/master/2469-convert-the-temperature) |
+| [2520-count-the-digits-that-divide-a-number](https://github.com/AsthaVed/Leetcode_Solutions/tree/master/2520-count-the-digits-that-divide-a-number) |
 | [3524-find-x-value-of-array-i](https://github.com/AsthaVed/Leetcode_Solutions/tree/master/3524-find-x-value-of-array-i) |
 | [3525-find-x-value-of-array-ii](https://github.com/AsthaVed/Leetcode_Solutions/tree/master/3525-find-x-value-of-array-ii) |
 ## Array
