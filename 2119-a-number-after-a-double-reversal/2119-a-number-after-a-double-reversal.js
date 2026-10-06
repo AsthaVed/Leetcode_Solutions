@@ -2,18 +2,19 @@
  * @param {number} num
  * @return {boolean}
  */
+// var isSameAfterReversals = function(num) {
+//     let original = num;
+//     let reverse = 0;
+//     while (num > 0){
+//         let digit = num%10;
+//         reverse = reverse * 10 + digit;
+//         num = Math.floor(num/10);
+//     }
+//     let doubleReverse = String(reverse).split('').reverse().join('')
+//     console.log(original, " ", String(reverse).split('').reverse().join(''))
+//     return original === Number(doubleReverse)
+// };
 var isSameAfterReversals = function(num) {
-    let num1 = String(num).split('').reverse();   //['6', '2', '5']
-   while(num1[0] === '0'){
-    num1.shift();
-   }
-
-   let reverse1 = num1.join('');  //625 
-
-   let reverse2 = num1.reverse().join('')   //526
-    if(Number(reverse2) === num){
-        return true
-    }else{
-        return false
-    }
+    // last value is not 0 or first is 0 -> true else -> false
+    return num === 0 || num % 10 !== 0;
 };
