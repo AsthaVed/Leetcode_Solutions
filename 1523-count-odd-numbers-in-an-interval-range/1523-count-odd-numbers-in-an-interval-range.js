@@ -16,3 +16,11 @@
 var countOdds = function(low, high) {
     return (Math.floor((high+1)/2) - Math.floor(low/2))
 };
+
+// var countOdds = function(low, high) {
+//     let count = Math.floor((high - low) / 2);
+//     if (low % 2 !== 0 || high % 2 !== 0) {
+//         count++;
+//     }
+//     return count;
+// };
